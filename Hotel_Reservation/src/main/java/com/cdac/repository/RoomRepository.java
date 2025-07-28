@@ -1,5 +1,9 @@
 package com.cdac.repository;
 
-public interface RoomRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cdac.model.Room;
+
+public interface RoomRepository extends JpaRepository<Room, Long> {
 
 }
