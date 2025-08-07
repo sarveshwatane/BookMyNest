@@ -35,6 +35,11 @@ public class User {
 	@Column(unique = true)
 	private String email;
 	
+	@NotBlank(message = "Password is required")
+    private String password;
+    private String firstName;
+    private String lastName;
+	
 	@NotBlank(message = "Phone Number is required")
 	@Column(name = "phone_number")
 	private String phoneNumber;
